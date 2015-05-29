@@ -7,8 +7,9 @@ What value do you think it offers?
 
 	The staging area is a midway point between the working directory and the repository. You create edits on documents in a working directory, add them to the staging area to prepare a commit, and the commit them to the repository, which you can then log. This allows greater freedom to the user, who can decide which files are ready for a commit at which time, and prepare them in the staging area for a more meaningful entry in the repository. 
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
+
+	You can use the git diff function to see how somethign in the working directory differs from the version in the staging area, and how the version in the staging area differs from the last commit version. That allows you to make sure to make one commit per logical change. 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
