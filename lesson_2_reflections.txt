@@ -11,13 +11,18 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 	You can use the git diff function to see how somethign in the working directory differs from the version in the staging area, and how the version in the staging area differs from the last commit version. That allows you to make sure to make one commit per logical change. 
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Branches could be useful in creating an easy mode in a game, or another language version of a file, or in trying something experimental while also continuing to work on the main version of the file. They allow people to keep altering and committing the file on the main branch while also working on other versions in multiple stages.
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+	Diagrams help visualize the branch structure by operating as maps, which trace back the different paths taken in the processing history, and making reachability easy to measure.
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	
+	When two branches are merged, all of the commits made during the course of work on one branch are brought together with those made during work on another, and they appear together under the same branch heading. They are now reachable from one another, and from the tip of the branch into which the other(s) was/were merged. It's represented on the diagram in such a way to show which branches were merged, what the resulting branch is called, and what commits are now reachable from the tip.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Doing merges manually would be labor intensive and prone to error, so it is preferrable that Git does this automatically. The con is that there is always a chance something you didn't want to keep is merged into the branch and this will need to be found and debugged.
